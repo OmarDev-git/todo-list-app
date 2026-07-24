@@ -6,9 +6,8 @@ import { TasksProvider } from "./features/tasks/contexts/TasksProvider";
 
 // My Components
 import TasksCard from "./features/tasks/components/TasksCard";
-import DevSignature from "./components/shared/DevSignature/DevSignature";
-import DialogueRouter from "./features/tasks/components/DialogueRouter";
 
+import DialogueRouter from "./features/tasks/components/DialogueRouter";
 
 export default function App() {
   return (
@@ -17,15 +16,10 @@ export default function App() {
         <TasksProvider>
           {/* The Main Content */}
           <TasksCard />
-          
-          {/* Show Dialogue in need  */}
-          <DialogueRouter/>
-        </TasksProvider>
 
-        {/* Contact Info */}
-        <div dir="ltr" className="xl:absolute xl:m-4 bottom-0 right-0 ">
-          <DevSignature />
-        </div>
+          {/* Show Dialogue in need  */}
+          <DialogueRouter />
+        </TasksProvider>
 
         {/* Global toast notifications */}
         <Toast.Provider
